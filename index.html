@@ -19,9 +19,9 @@
     <title>Ashish Ekka</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-transparent" id="navbar">
+    <nav class="navbar navbar-expand-sm fixed-top navbar-dark" id="navbar">
       <a class="navbar-brand" href="#intro">
-        <img src="" width="30" height="30" class="d-inline-block align-top" alt="">
+        <img src="./" width="30" height="30" class="d-inline-block align-top" alt="">
       </a>
 
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -30,16 +30,16 @@
 
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto" id="navig">
-          <li class="nav-item">
-            <a class="nav-link" href="#intro">Hello<span class="sr-only">(current)</span></a>
+          <li data-menuanchor="intro" class="nav-item">
+            <a class="nav-link" href="#intro">Hello!<span class="sr-only">(current)</span></a>
           </li>
-          <li class="nav-item">
+          <li data-menuanchor="about" class="nav-item">
             <a class="nav-link" href="#about">About</a>
           </li>
-          <li class="nav-item">
+          <li data-menuanchor="work" class="nav-item">
             <a class="nav-link" href="#work">Work</a>
           </li>
-          <li class="nav-item">
+          <li data-menuanchor="contact" class="nav-item">
             <a class="nav-link" href="#contact">Contact</a>
           </li>
         </ul>
@@ -50,10 +50,17 @@
       <div class="intro-background section" id="welcome-section">
       <div class="align-middle intro">
         <h1>Hello, I'm Ashish.</h1>
-        <a href="" class="typewrite" data-period="2000" data-type='[ "A Curious Student.", "A Full Stack Web Developer.", "A Tech Enthusiast.", "An EDM Lover.", "A Foodie who doesn`t gives a damn when he sees good food."]'>
+        <span href="" class="typewrite" data-period="2000" data-type='[ "A Curious Student.", "A Full Stack Web Developer.", "A Tech Enthusiast.", "An EDM Lover.", "A Foodie who doesn`t gives a damn when he sees good food."]'>
           <span class="wrap"></span>
-        </a>
+        </span>
       </div>
+        
+
+        <a href="#about" class="button--scroll animation animation--infinite animation--up-down">
+          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="-275 398.7 44.2 44.2"><path fill="#fff" d="M-275 420.8c0-12.2 9.9-22.1 22.1-22.1s22.1 9.9 22.1 22.1c0 12.2-9.9 22.1-22.1 22.1s-22.1-9.9-22.1-22.1zm42.7 0c0-11.4-9.2-20.6-20.6-20.6-11.4 0-20.6 9.2-20.6 20.6 0 11.4 9.2 20.6 20.6 20.6 11.4 0 20.6-9.3 20.6-20.6zM-260.6 418c0-.2.1-.4.2-.5.3-.3.8-.3 1.1 0l6.8 6.8 6.8-6.8c.3-.3.8-.3 1.1 0 .3.3.3.8 0 1.1l-7.3 7.3c-.3.3-.8.3-1.1 0l-7.3-7.3c-.3-.2-.3-.4-.3-.6z"/>
+          </svg>
+        </a>
+
     </div>
 
     <div class="area" >
@@ -71,7 +78,17 @@
             </ul>
     </div >
     <div class="about-background section" id="about-section">
-
+      <div class="row d-block d-md-none" style="margin: 0; margin-bottom: 20px;">
+        <div class="col-md-4">
+        </div>
+        <div class="col-md-4">
+          <div class="work-title">
+            About
+          </div>
+        </div>
+        <div class="col-md-4">
+        </div>
+      </div>
       <div class="row about">
         <div class="col-md-4 left">
           <h2>Who is he?</h2>
@@ -92,7 +109,7 @@
         </div>
 
         <div class="col-md-4 center">
-          <h2>About</h2>
+          <h2 class="d-none d-md-block">About</h2>
           <div class="social-container-wrap">
               <br><br><br>
               <div class="social-container">

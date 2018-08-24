@@ -3,8 +3,22 @@ html, body {
   font-family: 'Quicksand', sans-serif;
 }
 
-.navbar {
+/*.navbar {
   font-family: 'Quicksand', sans-serif;
+}*/
+
+@media (max-width: 768px) {
+
+  .navbar-toggler {
+    background: rgba(0,0,0,.2);
+    border-radius: 0;
+  }
+
+  .navbar-nav {
+    background: rgba(0,0,0,0.5);
+    text-align: center;
+    width: 25%;
+  }
 }
 
 .intro-background {
@@ -25,14 +39,56 @@ html, body {
   font-family: 'Abel', sans-serif;
 }
 
-.area{
-    background: #4e54c8;  
-    background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);  
-    width: 100%;
+.button--scroll {
+  bottom: 2rem;
+  left: 49%;
+  position: absolute;
+  transform: translateX(-50%);
+}
+
+.grid {
+  margin: 0 auto;
+  max-width: 74rem;
+  width: 90%;
+}
+.grid:before, .grid:after {
+  content: '';
+  display: table;
+}
+.grid:after {
+  clear: both;
+}
+
+.animation {
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+}
+.animation--infinite {
+  animation-iteration-count: infinite;
+}
+.animation--up-down {
+  animation-name: upDown;
+}
+
+@keyframes upDown {
+  0% {
+    transform: translateY(-15px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-15px);
+  }
+}
+
+svg {
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
 }
 
 .circles{
-    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -534,7 +590,7 @@ button {
 
 .work {
   height: 100vh;
-  background: #3b5998;
+  background: #2D5DA1;
 }
 
 .work-title {
