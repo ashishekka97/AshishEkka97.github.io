@@ -437,6 +437,15 @@ button {
   text-align: center;
 }
 
+.center > h3 {
+  font-family: 'Quicksand', sans-serif;
+  border-left: solid #D3D2D1;
+  border-right: solid #D3D2D1;
+  font-size: 2.5em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
 .social-container-wrap {
   width:100%;
   height:600px;
