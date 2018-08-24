@@ -1,261 +1,637 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-	<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Personal &mdash; Free HTML5 Bootstrap Website Template by FreeHTML5.co</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Free HTML5 Website Template by FreeHTML5.co" />
-	<meta name="keywords" content="free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive" />
-	<meta name="author" content="FreeHTML5.co" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
-  <!-- 
-	//////////////////////////////////////////////////////
+    <link rel="stylesheet" href="./styles.css">
 
-	FREE HTML5 TEMPLATE 
-	DESIGNED & DEVELOPED by FreeHTML5.co
-		
-	Website: 		http://freehtml5.co/
-	Email: 			info@freehtml5.co
-	Twitter: 		http://twitter.com/fh5co
-	Facebook: 		https://www.facebook.com/fh5co
+    <link href="https://fonts.googleapis.com/css?family=Abel|Quicksand|Lobster|Source+Code+Pro|Lato" rel="stylesheet">
 
-	//////////////////////////////////////////////////////
-	 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 
-  	<!-- Facebook and Twitter integration -->
-	<meta property="og:title" content=""/>
-	<meta property="og:image" content=""/>
-	<meta property="og:url" content=""/>
-	<meta property="og:site_name" content=""/>
-	<meta property="og:description" content=""/>
-	<meta name="twitter:title" content="" />
-	<meta name="twitter:image" content="" />
-	<meta name="twitter:url" content="" />
-	<meta name="twitter:card" content="" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.2/fullpage.min.css" integrity="sha256-UpMjO/vjKVT88OY3sXrfRuk/gjS8ETEO0B1rVwBqN58=" crossorigin="anonymous" />
 
-	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-	<link rel="shortcut icon" href="favicon.ico">
+    <title>Ashish Ekka</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-transparent" id="navbar">
+      <a class="navbar-brand" href="#intro">
+        <img src="" width="30" height="30" class="d-inline-block align-top" alt="">
+      </a>
 
-	<!-- <link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,600,400italic,700' rel='stylesheet' type='text/css'> -->
-	
-	<!-- Animate.css -->
-	<link rel="stylesheet" href="css/animate.css">
-	<!-- Icomoon Icon Fonts-->
-	<link rel="stylesheet" href="css/icomoon.css">
-	<!-- Bootstrap  -->
-	<link rel="stylesheet" href="css/bootstrap.css">
-	<!-- Theme style  -->
-	<link rel="stylesheet" href="css/style.css">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-	<!-- Modernizr JS -->
-	<script src="js/modernizr-2.6.2.min.js"></script>
-	<!-- FOR IE9 below -->
-	<!--[if lt IE 9]>
-	<script src="js/respond.min.js"></script>
-	<![endif]-->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto" id="navig">
+          <li class="nav-item">
+            <a class="nav-link" href="#intro">Hello<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#work">Work</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div id='fullpage'>
+      
+      <div class="intro-background section" id="welcome-section">
+      <div class="align-middle intro">
+        <h1>Hello, I'm Ashish.</h1>
+        <a href="" class="typewrite" data-period="2000" data-type='[ "A Curious Student.", "A Full Stack Web Developer.", "A Tech Enthusiast.", "An EDM Lover.", "A Foodie who doesn`t gives a damn when he sees good food."]'>
+          <span class="wrap"></span>
+        </a>
+      </div>
+    </div>
 
-	</head>
-	<body style="background-image: url(images/bg_img.jpg);">
-	
-	<div id="fh5co-main">
-		<div class="fh5co-tab-wrap">
-			<ul class="fh5co-tab-menu">
-				<li class="active"><a href="#" data-tab="1"><span class="icon icon-glass"></span><span class="menu-text">Profile</span></a></li>
-				<li><a href="#" data-tab="2"><span class="icon icon-graduation-cap"></span><span class="menu-text">Education</span></a></li>
-				<li><a href="#" data-tab="3"><span class="icon icon-black-tie"></span><span class="menu-text">Works</span></a></li>
-				<li><a href="#" data-tab="4" data-pie="yes"><span class="icon icon-fighter-jet"></span><span class="menu-text">Skills</span></a></li>
-			</ul>
-			<div class="fh5co-tab-content active" data-content="1">
-				<div class="fh5co-content-inner text-center">
-					<div class="row row-bottom-padded-sm">
-						<div class="col-md-12">
-							<figure>
-								<img src="images/pic.png" width="140" height="140" alt="Free HTML5 Wesbite Template by FreeHTML5.co">
-							</figure>
-							<h1>Ashish Ekka</h1>
-							<a href="https://resume.creddle.io/resume/eb8t815tu2p">See Resume</a>
-							<p>A Computer Science Undergraduate at Bhilai Institute of Technology, Durg. A Tech Enthusiast and a Developer, constantly seeking new resources to build something new. Lives by the philosphy 'Learn X to Do Y'. You can freely look upon some of his projects hosted on GitHub. Have a work for him? Feel free to contact. </p>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-12 fh5co-counter">
-							<div class="fh5co-number fh5co-left">2</div>
-							<div class="fh5co-text">
-								<h3 class="border-bottom">Years of works in the field of Web Development</h3>
-								<p>and counting...</p>
-							</div>
-						</div>
-					</div>
-					<ul class="fh5co-social">
-						<li><a href="mailto://ashishekka329@gmail.com"><i class="icon-envelope"></i></a></li>
-						<li><a href="http://twitter.com/ashekka"><i class="icon-twitter"></i></a></li>
-						<li><a href="http:/github.com/ashishekka97"><i class="icon-github"></i></a></li>
-						<li><a href="http://technofever.in"><i class="icon-globe"></i></a></li>
-						<li><a href="http://linkedin.com/in/ashishekka97"><i class="icon-linkedin"></i></a></li>
-					</ul>
-				</div>
-			</div>
-			<div class="fh5co-tab-content" data-content="2">
-				<div class="fh5co-content-inner">
-					<div class="row">
-						<div class="col-md-12">
-							<p>Currently pursuing Bachelor's Degree in CS at Bhilai Institute of Technology, Durg</p>
+    <div class="area" >
+            <ul class="circles">
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+    </div >
+    <div class="about-background section" id="about-section">
 
-							<div class="fh5co-feature">
-								<div class="fh5co-icon">
-									<i class="icon-graduation-cap"></i>
-								</div>
-								<div class="fh5co-text">
-									<h2>2015-2019</h2>
-									<p>Bachelor of Engineering in Computer Science</p>
-								</div>
-							</div>
+      <div class="row about">
+        <div class="col-md-4 left">
+          <h2>Who is he?</h2>
+          <p>
+            Namaste! I'm Ashish Ekka, a computer science
+            senior at Bhilai Institue of Technology, Durg.
+            I love to build things that run on the web.
+            I also develop apps that run natively.
+          </p>
+          <p>
+            At times when I'm not building these stuffs,
+            I usually listen to good music, read something interesting or wander around the city with
+            friends in search of good food.
+          </p>
+          <div class="btn Coral">
+            <a  href="https://resume.creddle.io/resume/eb8t815tu2p"><button>Resumé<span class="Coralwave1"></span><span class="Coralwave2"></span><span class="Coralwave3"></span></button></a>
+          </div>
+        </div>
 
-							<div class="fh5co-feature">
-								<div class="fh5co-icon">
-									<i class="icon-graduation-cap"></i>
-								</div>
-								<div class="fh5co-text">
-									<h2>2015</h2>
-									<p>XII - Central Board of Seconadary Education</p>
-								</div>
-							</div>
+        <div class="col-md-4 center">
+          <h2>About</h2>
+          <div class="social-container-wrap">
+              <br><br><br>
+              <div class="social-container">
+                  <a href="https://twitter.com/ashekka" class="twitter"><i class="fa fa-twitter"></i></a>
+                  <a href="https://www.facebook.com/ashekka" class="facebook"><i class="fa fa-facebook"></i></a>
+                  <a href="https://plus.google.com/u/0/113621284916491998001" class="googleplus"><i class="fa fa-google-plus"></i></a>
+                  <a href="https://www.quora.com/profile/Ashish-Ekka-10" class="quora"><i class="fa fa-quora"></i></a>
+                  <a href="https://github.com/ashishekka97" class="github"><i class="fa fa-github"></i></a>
+                  <a href="https://medium.com/@ashishekka329" class="medium"><i class="fa fa-medium"></i></a>
+                  <a href="https://www.instagram.com/ashishekka97/" class="instagram"><i class="fa fa-instagram"></i></a>
+                  <a href="https://twitter.com/ashishekka97" class="linkedin"><i class="fa fa-linkedin"></i></a>
+                  <a href="mailto://ashishekka329@gmail.com" class="envelope"><i class="fa fa-envelope"></i></a>
+                  
+              </div>
+          </div>
+        </div>
+        
+        <div class="col-md-4 right">
+          <h2>Skilled In</h2>
+          <div class='wrapper' id="skills">
+            <div class='bar'>
+              <div class='bar-info html' data-total='80'>
+                Node JS
+                <span class='percent'>80</span>
+              </div>
+            </div>
 
-							<div class="fh5co-feature">
-								<div class="fh5co-icon">
-									<i class="icon-graduation-cap"></i>
-								</div>
-								<div class="fh5co-text">
-									<h2>2013</h2>
-									<p>X - Central Board of Secondary Education</p>
-								</div>
-							</div>
+            <div class='bar'>
+              <div class='bar-info css' data-total='75'>
+                Vue
+                <span class='percent'>75</span>
+              </div>
+            </div>
 
-						</div>
-						
-					</div>
-				</div>
-			</div>
-			<div class="fh5co-tab-content" data-content="3">
-				<div class="fh5co-content-inner">
-					<div class="row">
-						<div class="col-md-12">
+            <div class='bar'>
+              <div class='bar-info js' data-total='85'>
+                JavaScript
+                <span class='percent'>85</span>
+              </div>
+            </div>
+            
+            <div class='bar'>
+              <div class='bar-info ps' data-total='90'>
+                HTML5 & CSS3
+                <span class='percent'>90</span>
+              </div>
+            </div>
 
-							<p>Some of my Works are showcased here.</p>
+            <div class='bar'>
+              <div class='bar-info java' data-total='65'>
+                Java
+                <span class='percent'>65</span>
+              </div>
+            </div>
 
-							<div class="fh5co-feature">
-								<div class="fh5co-icon">
-									<i class="icon-black-tie"></i>
-								</div>
-								<div class="fh5co-text">
-									<h2>Aceso</h2>
-									<h3>Smart India Hackathon - 2018</h3>
-									<p>A system developed using MEN stack to assess the mental health of the students</p>
-								</div>
-							</div>
+            <div class='bar'>
+              <div class='bar-info mysql' data-total='70'>
+                MySQL
+                <span class='percent'>70</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-							<div class="fh5co-feature">
-								<div class="fh5co-icon">
-									<i class="icon-black-tie"></i>
-								</div>
-								<div class="fh5co-text">
-									<h2>JobPortal</h2>
-									<h3>Self</h3>
-									<p>A PHP based job serach portal much like indeed.com.</p>
-								</div>
-							</div>
+    <div class="work section">
+      <div class="row" style="margin: 0; margin-bottom: 20px;">
+        <div class="col-md-4">
+        </div>
+        <div class="col-md-4">
+          <div class="work-title">
+            Work
+          </div>
+        </div>
+        <div class="col-md-4">
+        </div>
+      </div>
+      
+      <div class="container">
+        <div class="row work-container">
+          <div class="col-md-4 spacer">
+            <!-- Card Flip -->
+            <div class="card-flip">
+              <div class="flip">
+                <div class="front">
+                  <!-- front content -->
+                  <div class="card">
+                    <img class="card-img-top" src="./img/trendin8r.jpg" alt="100%x180" style="height: 180px; width: 100%; display: block;" data-holder-rendered="true">
+                    <div class="card-block">
+                      <h4 class="card-title">Trendin8r</h4>
+                      <p class="card-text">A twitter trend analysis and visualization app.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="back">
+                  <!-- back content -->
+                  <div class="card">
+                    <div class="card-block">
+                      <h4 class="card-title">Trendin8r</h4>
+                      <h6 class="card-subtitle text-muted">Tools Used</h6>
+                    </div>
+                    <div class="card-block">
+                      <ul>
+                        <li>D3</li>
+                        <li>Vue JS</li>
+                        <li>Twitter API</li>
+                        <li>Node JS</li>
+                        <li>Brain JS</li>
+                      </ul>
+                      <center>
+                        <a href="#" class="btn btn-work">View Project</a>
+                      </center>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End Card Flip -->
+          </div>
+          <div class="col-md-4 spacer">
+            <!-- Card Flip -->
+            <div class="card-flip">
+              <div class="flip">
+                <div class="front">
+                  <!-- front content -->
+                  <div class="card">
+                    <img class="card-img-top" src="./img/aceso.png"" alt="100%x180" style="height: 180px; width: 100%; display: block;" data-holder-rendered="true">
+                    <div class="card-block">
+                      <h4 class="card-title">Aceso</h4>
+                      <p class="card-text">App to assess the mental health of students.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="back">
+                  <!-- back content -->
+                  <div class="card">
+                    <div class="card-block">
+                      <h4 class="card-title">Aceso</h4>
+                      <h6 class="card-subtitle text-muted">Tools Used</h6>
+                    </div>
+                    <div class="card-block">
+                      <ul>
+                        <li>D3</li>
+                        <li>Materialize</li>
+                        <li>Express</li>
+                        <li>Node JS</li>
+                        <li>Mongo DB</li>
+                      </ul>
+                      <center>
+                        <a href="https://github.com/bitjargons/Aceso" class="btn btn-work">View Project</a>
+                      </center>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End Card Flip -->
+          </div>
+          <div class="col-md-4 spacer">
+            <!-- Card Flip -->
+            <div class="card-flip">
+              <div class="flip">
+                <div class="front">
+                  <!-- front content -->
+                  <div class="card">
+                    <img class="card-img-top" src="./img/rofa.png" alt="100%x180" style="height: 180px; width: 100%; display: block;" data-holder-rendered="true">
+                    <div class="card-block">
+                      <h4 class="card-title">ROFA</h4>
+                      <p class="card-text">A password manager in JAVA.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="back">
+                  <!-- back content -->
+                  <div class="card">
+                    <div class="card-block">
+                      <h4 class="card-title">ROFA</h4>
+                      <h6 class="card-subtitle text-muted">Tools Used</h6>
+                    </div>
+                    <div class="card-block">
+                      <ul>
+                        <li>Netbeans</li>
+                        <li>Swing</li>
+                        <li>Java Util Library</li>
+                        <li>File Enryptor</li>
+                        <li>No Database</li>
+                      </ul>
+                      <center>
+                        <a href="https://github.com/AshishEkka97/ROFA" class="btn btn-work">View Project</a>
+                      </center>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End Card Flip -->
+          </div>
+          <div class="col-md-4 spacer">
+            <!-- Card Flip -->
+            <div class="card-flip">
+              <div class="flip">
+                <div class="front">
+                  <!-- front content -->
+                  <div class="card">
+                    <img class="card-img-top" src="./img/snake.png"" alt="100%x180" style="height: 180px; width: 100%; display: block;" data-holder-rendered="true">
+                    <div class="card-block">
+                      <h4 class="card-title">Snake</h4>
+                      <p class="card-text">A simple snake game made in javascript.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="back">
+                  <!-- back content -->
+                  <div class="card">
+                    <div class="card-block">
+                      <h4 class="card-title">Snake</h4>
+                      <h6 class="card-subtitle text-muted">Tools Used</h6>
+                    </div>
+                    <div class="card-block">
+                      <ul>
+                        <li>Javascript</li>
+                        <li>HTML</li>
+                        <li>Canvas</li>
+                        <li>Paint</li>
+                        <li>Youtube</li>
+                      </ul>
+                      <center>
+                        <a href="https://github.com/AshishEkka97/Snake" class="btn btn-work">View Project</a>
+                      </center>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End Card Flip -->
+          </div>
+        </div>
+      </div>
+    </div>
 
-							<div class="fh5co-feature">
-								<div class="fh5co-icon">
-									<i class="icon-black-tie"></i>
-								</div>
-								<div class="fh5co-text">
-									<h2>Complaint Resolve System</h2>
-									<h3>Talpuri International Colony</h3>
-									<p>A PHP based project developed to resolve the complaints in a housing colony</p>
-								</div>
-							</div>
+    <div class="contact section">
+      <form id="contact-form" action="https://formspree.io/ashishekka329@gmail.com" method="POST">
+        <p>Dear Ashish,</p>
+        <p>My
+          <label for="your-name">name</label> is
+          <input type="text" name="your-name" id="your-name" minlength="3" placeholder="(your name here)" required> and</p>
 
-							<div class="fh5co-feature">
-								<div class="fh5co-icon">
-									<i class="icon-black-tie"></i>
-								</div>
-								<div class="fh5co-text">
-									<h2>ROFA</h2>
-									<h3>Self</h3>
-									<p>A Password Manager Developed in Java</p>
-								</div>
-							</div>
+        <p>my
+          <label for="email">email address</label> is
+          <input type="email" name="your-email" id="email" placeholder="(your email address)" required>
+        </p>
 
-						</div>
-						
-					</div>
-				</div>
-			</div>
-			<div class="fh5co-tab-content" data-content="4">
-				<div class="fh5co-content-inner">
-					<div class="row">
-						<div class="col-md-12">
-							<p>I'm preety much comfortable with these technologies:</p>
-						</div>
-						<div class="col-md-4 col-sm-6 col-xs-12 text-center">
-							<div class="chart" data-percent="90"><span><strong>HTML5</strong>90%</span></div>
-						</div>
-						<div class="col-md-4 col-sm-6 col-xs-12 text-center">
-							<div class="chart" data-percent="80"><span><strong>CSS3</strong>80%</span></div>
-						</div>
+        <p> I have a
+          <label for="your-message">message</label> for you,</p>
 
-						<div class="col-md-4 col-sm-6 col-xs-12 text-center">
-							<div class="chart" data-percent="85"><span><strong>JavaScript</strong>85%</span></div>
-						</div>
+        <p>
+          <textarea name="your-message" id="your-message" placeholder="(your msg here)" class="expanding" required></textarea>
+        </p>
+        <p>
+          <button type="submit">
+            <svg version="1.1" class="send-icn" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100px" height="36px" viewBox="0 0 100 36" enable-background="new 0 0 100 36" xml:space="preserve">
+              <path d="M100,0L100,0 M23.8,7.1L100,0L40.9,36l-4.7-7.5L22,34.8l-4-11L0,30.5L16.4,8.7l5.4,15L23,7L23.8,7.1z M16.8,20.4l-1.5-4.3
+        l-5.1,6.7L16.8,20.4z M34.4,25.4l-8.1-13.1L25,29.6L34.4,25.4z M35.2,13.2l8.1,13.1L70,9.9L35.2,13.2z" />
+            </svg>
+            <small>send</small>
+          </button>
+        </p>
+      </form>
+      <div class="love">
+        <i class="fa fa-code"></i> with <i class="fa fa-heart"></i>, <i class="fa fa-coffee"></i> and <i class="fa fa-music"></i>     
+      </div>
+    </div>
+    </div>
 
-						<div class="col-md-4 col-sm-6 col-xs-12 text-center">
-							<div class="chart" data-percent="75"><span><strong>jQuery</strong>75%</span></div>
-						</div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="./background.js"></script>
+    <script>
+      $(".twitter").hover(function () {$("#about-section").toggleClass("color-twitter")});
+      $(".facebook").hover(function () {$("#about-section").toggleClass("color-facebook")});
+      $(".googleplus").hover(function () {$("#about-section").toggleClass("color-googleplus")});
+      $(".quora").hover(function () {$("#about-section").toggleClass("color-quora")});
+      $(".medium").hover(function () {$("#about-section").toggleClass("color-medium")});
+      $(".instagram").hover(function () { $("#about-section").toggleClass("color-instagram") });
+      $(".github").hover(function () { $("#about-section").toggleClass("color-github") });
+      $(".envelope").hover(function () { $("#about-section").toggleClass("color-envelope") });
+      $(".linkedin").hover(function () { $("#about-section").toggleClass("color-linkedin") });
+    </script>
 
-						<div class="col-md-4 col-sm-6 col-xs-12 text-center">
-							<div class="chart" data-percent="80"><span><strong>PHP</strong>80%</span></div>
-						</div>
-						<div class="col-md-4 col-sm-6 col-xs-12 text-center">
-							<div class="chart" data-percent="85"><span><strong>MySQL</strong>85%</span></div>
-						</div>
-						<div class="col-md-4 col-sm-6 col-xs-12 text-center">
-							<div class="chart" data-percent="70"><span><strong>Node JS</strong>70%</span></div>
-						</div>
+    <script>
+      var TxtType = function(el, toRotate, period) {
+        this.toRotate = toRotate;
+        this.el = el;
+        this.loopNum = 0;
+        this.period = parseInt(period, 10) || 2000;
+        this.txt = '';
+        this.tick();
+        this.isDeleting = false;
+    };
 
-					</div>
-				</div>
-			</div>
-		</div>
-		<footer id="fh5co-footer">
-			<div class="row">
-				<div class="col-md-6 col-md-offset-3 text-center">
-					<small>
-						&copy; 2018 <span class="fh5co-author">
-						Designed by Ashish Ekka</span>
-					</small>
-				</div>
-			</div>
-		</footer>
-	</div>
-	
-	<!-- jQuery -->
-	<script src="js/jquery.min.js"></script>
-	<!-- jQuery Easing -->
-	<script src="js/jquery.easing.1.3.js"></script>
-	<!-- Bootstrap -->
-	<script src="js/bootstrap.min.js"></script>
-	<!-- Waypoints -->
-	<script src="js/jquery.waypoints.min.js"></script>
-	<!-- Easy PieChart -->
-	<script src="js/jquery.easypiechart.min.js"></script>
-	<!-- MAIN JS -->
-	<script src="js/main.js"></script>
+    TxtType.prototype.tick = function() {
+        var i = this.loopNum % this.toRotate.length;
+        var fullTxt = this.toRotate[i];
 
-	</body>
+        if (this.isDeleting) {
+        this.txt = fullTxt.substring(0, this.txt.length - 1);
+        } else {
+        this.txt = fullTxt.substring(0, this.txt.length + 1);
+        }
+
+        this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+        var that = this;
+        var delta = 200 - Math.random() * 100;
+
+        if (this.isDeleting) { delta /= 2; }
+
+        if (!this.isDeleting && this.txt === fullTxt) {
+        delta = this.period;
+        this.isDeleting = true;
+        } else if (this.isDeleting && this.txt === '') {
+        this.isDeleting = false;
+        this.loopNum++;
+        delta = 500;
+        }
+
+        setTimeout(function() {
+        that.tick();
+        }, delta);
+    };
+
+    window.onload = function() {
+        var elements = document.getElementsByClassName('typewrite');
+        for (var i=0; i<elements.length; i++) {
+            var toRotate = elements[i].getAttribute('data-type');
+            var period = elements[i].getAttribute('data-period');
+            if (toRotate) {
+              new TxtType(elements[i], JSON.parse(toRotate), period);
+            }
+        }
+        // INJECT CSS
+        var css = document.createElement("style");
+        css.type = "text/css";
+        css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+        document.body.appendChild(css);
+    };
+
+    function isElementInViewport (el) {
+
+        //special bonus for those using jQuery
+        if (typeof jQuery === "function" && el instanceof jQuery) {
+            el = el[0];
+        }
+
+        var rect = el.getBoundingClientRect();
+
+        return (
+            rect.top >= 0 &&
+            rect.left >= 0 &&
+            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) && /*or $(window).height() */
+            rect.right <= (window.innerWidth || document.documentElement.clientWidth) /*or $(window).width() */
+        );
+    }
+
+    function onVisibilityChange(el, callback) {
+        var old_visible;
+        return function () {
+            var visible = isElementInViewport(el);
+            if (visible != old_visible) {
+                old_visible = visible;
+                if (typeof callback == 'function') {
+                    callback();
+                }
+            }
+        }
+    }
+
+    var skills = document.querySelector('#skills');
+
+    var handler = onVisibilityChange(skills, function() {
+      function skillSet() {
+        // Iterate over each element w/ a class of
+        // bar-info, storing the value of data-total
+        // in a variable.  Using jQuery's CSS method,
+        // dynamically update the width of each bar.
+        $('.bar-info').each(function() {
+          total = $(this).data("total");
+          $(this).css("width", total + "%");
+        });
+        
+        // Iterate over each element w/ the class percent.  Using
+        // jQuery's $(this) will allow us to interact w/ each specific
+        // object in the loop.  Then use jQuery's super awesome animate method
+        // to implement a counter on each .percent element, which will "count"
+        // up incrementally until it reaches the number inside the percent span,
+        // aka it's "ceiling".
+        $('.percent').each(function() {
+          var $this = $(this);
+          $({
+            Counter: 10
+          }).animate({
+            Counter: $this.text()
+          }, {
+            duration: 3000,
+            easing: 'swing',
+            step: function() {
+              $this.text(Math.ceil(this.Counter) + "%");
+            }
+          });
+        });
+      };
+      // Invoke our skillSet function inside a setTimeout, 
+      // to create a short delay before the animation begins.
+      setTimeout(skillSet, 1000);
+    });
+
+
+    //jQuery
+    $(window).on('DOMContentLoaded load resize scroll', handler);
+
+    // When the DOM is loaded and ready, let's do some shit!
+    </script>
+
+    <script>
+      document.querySelector(".card-flip").classList.toggle("flip");
+
+      /* 
+       * Holder.js for demo image
+       * Just for demo purpose
+       */
+      Holder.addTheme('gray', {
+        bg: '#777',
+        fg: 'rgba(255,255,255,.75)',
+        font: 'Helvetica',
+        fontweight: 'normal'
+      });
+
+    </script>
+
+    <script type="text/javascript">
+      // Auto resize input
+      function resizeInput() {
+          $(this).attr('size', $(this).val().length);
+      }
+
+      $('input[type="text"], input[type="email"]')
+          // event handler
+          .keyup(resizeInput)
+          // resize on page load
+          .each(resizeInput);
+
+
+      console.clear();
+      // Adapted from georgepapadakis.me/demo/expanding-textarea.html
+      (function(){
+        
+        var textareas = document.querySelectorAll('.expanding'),
+            
+            resize = function(t) {
+              t.style.height = 'auto';
+              t.style.overflow = 'hidden'; // Ensure scrollbar doesn't interfere with the true height of the text.
+              t.style.height = (t.scrollHeight + t.offset ) + 'px';
+              t.style.overflow = '';
+            },
+            
+            attachResize = function(t) {
+              if ( t ) {
+                console.log('t.className',t.className);
+                t.offset = !window.opera ? (t.offsetHeight - t.clientHeight) : (t.offsetHeight + parseInt(window.getComputedStyle(t, null).getPropertyValue('border-top-width')));
+
+                resize(t);
+
+                if ( t.addEventListener ) {
+                  t.addEventListener('input', function() { resize(t); });
+                  t.addEventListener('mouseup', function() { resize(t); }); // set height after user resize
+                }
+
+                t['attachEvent'] && t.attachEvent('onkeyup', function() { resize(t); });
+              }
+            };
+        
+        // IE7 support
+        if ( !document.querySelectorAll ) {
+        
+          function getElementsByClass(searchClass,node,tag) {
+            var classElements = new Array();
+            node = node || document;
+            tag = tag || '*';
+            var els = node.getElementsByTagName(tag);
+            var elsLen = els.length;
+            var pattern = new RegExp("(^|\\s)"+searchClass+"(\\s|$)");
+            for (i = 0, j = 0; i < elsLen; i++) {
+              if ( pattern.test(els[i].className) ) {
+                classElements[j] = els[i];
+                j++;
+              }
+            }
+            return classElements;
+          }
+          
+          textareas = getElementsByClass('expanding');
+        }
+        
+        for (var i = 0; i < textareas.length; i++ ) {
+          attachResize(textareas[i]);
+        }
+        
+      })();
+
+    </script>
+
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.2/vendors/scrolloverflow.min.js" integrity="sha256-/Co8KzV8JW/dBK3Lo15ioImtSVLDMShQHUQQwsgldI4=" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.2/fullpage.min.js" integrity="sha256-Q47o2Uc6LErNo37jq+LX+NR6bQ6sr9WGLW95qCZcsyM=" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+      new fullpage('#fullpage', {
+        licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
+        fixedElements: '#navbar',
+        menu: '#navig',
+        anchors:['intro', 'about', 'work', 'contact'],
+        autoScrolling:true,
+        verticalCentered: false,
+        scrollOverflow: true,
+        scrollHorizontally: true
+      });
+
+      //methods
+      fullpage_api.setAllowScrolling(true);
+    </script>
+  </body>
 </html>
