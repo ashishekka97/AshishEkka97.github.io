@@ -643,12 +643,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.2/fullpage.min.js" integrity="sha256-Q47o2Uc6LErNo37jq+LX+NR6bQ6sr9WGLW95qCZcsyM=" crossorigin="anonymous"></script>
 
     <script type="text/javascript">
-      function getRandomColor() {
-        var r = getRandomRGBValue(),
-        g = getRandomRGBValue(),
-        b = getRandomRGBValue();
-        return "#" + (((1 << 24) + (r << 16) + (g << 8) + b).toString(16).slice(1));
-      }
       new fullpage('#fullpage', {
         licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
         fixedElements: '#navbar',
@@ -679,6 +673,12 @@
       });
 
       //methods
+      function getRandomColor() {
+        var r = getRandomRGBValue(),
+        g = getRandomRGBValue(),
+        b = getRandomRGBValue();
+        return "#" + (((1 << 24) + (r << 16) + (g << 8) + b).toString(16).slice(1));
+      }
       fullpage_api.setAllowScrolling(true);
     </script>
   </body>
