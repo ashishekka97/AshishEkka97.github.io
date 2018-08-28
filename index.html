@@ -643,6 +643,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.2/fullpage.min.js" integrity="sha256-Q47o2Uc6LErNo37jq+LX+NR6bQ6sr9WGLW95qCZcsyM=" crossorigin="anonymous"></script>
 
     <script type="text/javascript">
+      function getRandomColor() {
+        var r = getRandomRGBValue(),
+        g = getRandomRGBValue(),
+        b = getRandomRGBValue();
+        return "#" + (((1 << 24) + (r << 16) + (g << 8) + b).toString(16).slice(1));
+      }
       new fullpage('#fullpage', {
         licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
         fixedElements: '#navbar',
@@ -655,7 +661,7 @@
         onLeave: function(origin, destination, direction) {
           var metaThemeColor = document.querySelector("meta[name=theme-color]");
           if(destination.index == 1){
-            metaThemeColor.setAttribute("content", "rgba(0, 0, 0, 0.8)");
+            metaThemeColor.setAttribute("content", "#333333");
           }
 
           else if(destination.index == 2){
@@ -663,7 +669,11 @@
           }
 
           else if(destination.index == 3){
-            metaThemeColor.setAttribute("content", "rgba(236, 181, 62, 0.95)");
+            metaThemeColor.setAttribute("content", "#EDB948");
+          }
+
+          else {
+            metaThemeColor.setAttribute("content", getRandomColor());
           }
         }
       });
