@@ -395,7 +395,7 @@
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="./background.js"></script>
+    <!-- <script src="./background.js"></script> -->
     <script>
       $(".twitter").hover(function () {$("#about-section").toggleClass("color-twitter")});
       $(".facebook").hover(function () {$("#about-section").toggleClass("color-facebook")});
@@ -667,7 +667,7 @@
           }
 
           else {
-            metaThemeColor.setAttribute("content", getRandomColor());
+            changeThemeColor();
           }
         }
       });
@@ -681,6 +681,13 @@
         g = getRandomRGBValue(),
         b = getRandomRGBValue();
         return "#" + (((1 << 24) + (r << 16) + (g << 8) + b).toString(16).slice(1));
+      }
+      function changeThemeColor() {
+        var metaThemeColor = document.querySelector("meta[name=theme-color]");
+        metaThemeColor.setAttribute("content", getRandomColor());
+        setTimeout(function() {
+            changeThemeColor();
+        }, 3000);
       }
       fullpage_api.setAllowScrolling(true);
     </script>
