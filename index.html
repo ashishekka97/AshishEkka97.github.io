@@ -16,7 +16,7 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.2/fullpage.min.css" integrity="sha256-UpMjO/vjKVT88OY3sXrfRuk/gjS8ETEO0B1rVwBqN58=" crossorigin="anonymous" />
 
-    <meta name="theme-color" content="rgba(255, 255, 255, 0.2)">
+    <meta name="theme-color" content="#23A6D5">
     <!-- <meta name="msapplication-TileColor" content="#03A87C"> -->
 
     <title>Ashish Ekka</title>
@@ -667,7 +667,7 @@
           }
 
           else {
-            changeThemeColor();
+            metaThemeColor.setAttribute("content", "#23A6D5");
           }
         }
       });
@@ -681,13 +681,6 @@
         g = getRandomRGBValue(),
         b = getRandomRGBValue();
         return "#" + (((1 << 24) + (r << 16) + (g << 8) + b).toString(16).slice(1));
-      }
-      function changeThemeColor() {
-        var metaThemeColor = document.querySelector("meta[name=theme-color]");
-        metaThemeColor.setAttribute("content", getRandomColor());
-        setTimeout(function() {
-            changeThemeColor();
-        }, 3000);
       }
       fullpage_api.setAllowScrolling(true);
     </script>
