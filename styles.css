@@ -9,10 +9,6 @@ html, body {
 
 @media (max-width: 768px) {
 
-  .navbar-collapse {
-    height: 100vh;
-  }
-
   .navbar {
     padding: 0;
   }
@@ -24,18 +20,85 @@ html, body {
     z-index: 99;
   }
 
+  .navbar-toggler {
+    border: none;
+    background: transparent !important;
+  }
+
+  .navbar-toggler:focus {
+    outline: none;
+    background: transparent !important;
+  }
+
+  .navbar-toggler .icon-bar {
+    background-color: #fff;
+    transform: rotate(0deg) translate(0px, 0px);
+    transition: ease all .2s;
+  }
+
+  .navbar-toggler .icon-bar {
+    display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
+  }
+
+  .navbar-toggler .icon-bar+.icon-bar {
+    margin-top: 4px;
+  }
+
+  .icon-bar:nth-child(2) {
+    width: 16px;
+    transition: ease all .2s;
+  }
+
+  .navbar-toggler:hover>.icon-bar:nth-child(2) {
+    width: 22px;
+    transition: ease all .2s;
+  }
+
+  .navbar-toggler:active>.icon-bar:nth-child(2) {
+    width: 22px;
+    transition: ease all .2s;
+  }
+
+  .navbar-toggler:not(.collapsed) .icon-bar:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 4px);
+    transition: ease all .2s;
+  }
+
+  .navbar-toggler:not(.collapsed) .icon-bar:nth-child(2) {
+    opacity: 0;
+    transition: ease all .2s;
+  }
+
+  .navbar-toggler:not(.collapsed) .icon-bar:nth-child(3) {
+    transform: rotate(-45deg) translate(4px, -4px);
+    transition: ease all .2s;
+  }
+
   .navbar-nav {
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding-top: 30%; 
-    background: rgba(0,0,0,0.85);
+    /*position: absolute;*/
+    /*padding-top: 30%; */
+    /*background: rgba(0,0,0,0.85);*/
     text-align: center;
     width: 100%;
     height: 100vh;
     vertical-align: middle;
     font-size: 3em;
   }
+}
+
+.navbg {
+  background: rgba(0,0,0,0.85);
+  -webkit-transition: all 0.5s ease-in-out;
+}
+
+.transition{
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition:all 0.5s ease-in-out;
+  -o-transition:all 0.5s ease-in-out;
+  transition:all 0.5s ease-in-out;
 }
 
 .intro-background {
@@ -96,9 +159,9 @@ html, body {
 }
 
 .typewrite {
-  font-size: 20px;
+  font-size: 2em;
   color: white;
-  font-family: 'Abel', sans-serif;
+  /*font-family: 'Abel', sans-serif;*/
 }
 
 .button--scroll {
@@ -341,7 +404,7 @@ button {
   border: solid #D3D2D1;
   background: transparent;
   transition: all 1s ease;
-  z-index: 99999;
+  z-index: 99;
 }
 .Coral button span {
   position: absolute;
@@ -358,14 +421,17 @@ button {
 .Coral button .Coralwave1 {
   background: #ffb733;
   animation: smallwave 3s infinite linear;
+  z-index: -99;
 }
 .Coral button .Coralwave2 {
   background: #f97890;
   animation: smallwave 4s infinite linear;
+  z-index: -99;
 }
 .Coral button .Coralwave3 {
   background: #4ab3e1;
   animation: smallwave 5s infinite linear;
+  z-index: -99;
 }
 .Coral button:hover {
   transition: all 1s ease;
@@ -566,7 +632,7 @@ button {
 .social-container .instagram{color:#ea4c89;border-color:#ea4c89;} /*#5c3d2e*/
 .social-container .linkedin{color:#007fb1;border-color:#007fb1;}
 .social-container .envelope{color:#5c3d2e;border-color:#5c3d2e;} /*#aaca62*/
-.social-container .github{color:#ffffff#24292E;border-color:#ffffff;}
+.social-container .github{color:#ffffff;border-color:#ffffff;}
 
 .social-container a i {
   -webkit-transform: rotate(-45deg);

@@ -10,6 +10,8 @@
 
     <link rel="stylesheet" href="./styles.css">
 
+    <link rel="stylesheet" type="text/css" href="./jquery.funnyText.css" />
+
     <link href="https://fonts.googleapis.com/css?family=Abel|Quicksand|Lobster|Source+Code+Pro|Lato" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
@@ -19,16 +21,20 @@
     <meta name="theme-color" content="#23A6D5">
     <!-- <meta name="msapplication-TileColor" content="#03A87C"> -->
 
-    <title>Ashish Ekka</title>
+    <title>Ashish Ekka - Student & Full Stack Developer</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-sm fixed-top navbar-dark" id="navbar">
+    <nav class="navbar navbar-expand-sm fixed-top navbar-dark transition" id="navbar">
       <a class="navbar-brand" href="#intro">
         <img src="./" width="30" height="30" class="d-inline-block align-top" alt="">
       </a>
 
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" onclick="loadbg()">
+        <!-- <span class="navbar-toggler-icon"></span> -->
+        <span class="icon-bar top-bar"></span>
+        <span class="icon-bar middle-bar"></span>
+        <span class="icon-bar bottom-bar"></span>
+        <span class="sr-only">Toggle navigation</span>
       </button>
 
       <div class="collapse navbar-collapse" id="navbarNav">
@@ -52,8 +58,8 @@
       
       <div class="intro-background section" id="welcome-section">
       <div class="align-middle intro">
-        <h1>Hello, I'm Ashish.</h1>
-        <span href="" class="typewrite" data-period="2000" data-type='[ "A Curious Student.", "A Full Stack Web Developer.", "A Tech Enthusiast.", "An EDM Lover.", "A Foodie.", "A Binge Watcher"]'>
+        <h1>Hello, I'm <span id="myname"> Ashish Ekka </span></h1>
+        <span href="" class="typewrite" data-period="2000" data-type='[ "A Curious Student.", "A Full Stack Developer.", "A Tech Enthusiast.", "An EDM Lover.", "A Foodie.", "A Gamer.", "A Night Owl.", "An Avid Reader."]'>
           <span class="wrap"></span>
         </span>
       </div>
@@ -387,7 +393,7 @@
         </p>
       </form>
       <div class="love">
-        <i class="fa fa-code"></i> with <i class="fa fa-heart"></i>, <i class="fa fa-coffee"></i> and <i class="fa fa-music"></i>     
+        <a href="https://github.com/AshishEkka97/ashishekka97.github.io"><i class="fa fa-code" style="color: #24292E;"></i></a> with <i class="fa fa-heart" style="color: #E73C7E;"></i> & <a href="https://www.youtube.com/playlist?list=PLcJEBNQ1NGCyQG1kXiqumDWlPaiQEU0cG"><i class="fa fa-music" style="color: #23A6D5;"></i></a>
       </div>
     </div>
     </div>
@@ -628,6 +634,10 @@
         
       })();
 
+      function loadbg() {
+        $('#navbar').toggleClass('navbg');
+      }
+
     </script>
 
     <script
@@ -684,5 +694,12 @@
       }
       fullpage_api.setAllowScrolling(true);
     </script>
+
+    <!-- <script type="text/javascript" src="jquery.funnyText.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $('#myname').funnyText();
+      });
+    </script> -->
   </body>
 </html>
