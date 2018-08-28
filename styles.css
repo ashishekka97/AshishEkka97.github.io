@@ -38,6 +38,10 @@ html, body {
   padding-top: 40vh;
 }
 
+.intro > h1 {
+  font-size: 4em;
+}
+
 .typewrite {
   font-size: 20px;
   color: white;
@@ -46,7 +50,7 @@ html, body {
 
 .button--scroll {
   bottom: 2rem;
-  left: 50%;
+  left: 49%;
   position: absolute;
   transform: translateX(-50%);
 }
@@ -57,7 +61,7 @@ html, body {
   }
 }
 
-@media (max-width: 981px) {
+@media (max-width: 441px) {
   .button--scroll {
     left: 45%;
   }
@@ -616,7 +620,7 @@ button {
 
 .work {
   height: 100vh;
-  background: #2D5DA1;
+  background: #9897A9;
 }
 
 .work-title {
@@ -658,6 +662,11 @@ button {
 }
 
 .card {
+  border-radius: 0;
+  border: none;
+}
+
+.card-img-top {
   border-radius: 0;
 }
 
@@ -745,7 +754,7 @@ input {
   text-align: center;
   background: none;
   font-weight: 700;
-  font-family: 'Lato', georgia;
+  font-family: 'Quicksand', sans-serif;
   font-size: 25px;
   color: rgba(255, 255, 255, 1);
   max-width: 90%;

@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.2/fullpage.min.css" integrity="sha256-UpMjO/vjKVT88OY3sXrfRuk/gjS8ETEO0B1rVwBqN58=" crossorigin="anonymous" />
 
     <meta name="theme-color" content="#03A87C">
-    <meta name="msapplication-TileColor" content="#03A87C">
+    <!-- <meta name="msapplication-TileColor" content="#03A87C"> -->
 
     <title>Ashish Ekka</title>
   </head>
@@ -53,7 +53,7 @@
       <div class="intro-background section" id="welcome-section">
       <div class="align-middle intro">
         <h1>Hello, I'm Ashish.</h1>
-        <span href="" class="typewrite" data-period="2000" data-type='[ "A Curious Student.", "A Full Stack Web Developer.", "A Tech Enthusiast.", "An EDM Lover.", "A Foodie who doesn`t gives a damn when he sees good food."]'>
+        <span href="" class="typewrite" data-period="2000" data-type='[ "A Curious Student.", "A Full Stack Web Developer.", "A Tech Enthusiast.", "An EDM Lover.", "A Foodie.", "A Binge Watcher"]'>
           <span class="wrap"></span>
         </span>
       </div>
@@ -98,13 +98,16 @@
           <p>
             Namaste! I'm Ashish Ekka, a computer science
             senior at Bhilai Institue of Technology, Durg.
-            I love to build things that run on the web.
-            I also develop apps that run natively.
+            I love to build things that run on the internet.
+            I also develop native apps.
           </p>
           <p>
-            At times when I'm not building these stuffs,
-            I usually listen to good music, read something interesting or wander around the city with
+            At times when I'm not usually building stuffs,
+            I listen to good music, read something interesting or wander around the city with
             friends in search of good food.
+          </p>
+          <p>
+            Check my resumé for more.
           </p>
           <div class="btn Coral">
             <a  href="https://resume.creddle.io/resume/eb8t815tu2p"><button>Resumé<span class="Coralwave1"></span><span class="Coralwave2"></span><span class="Coralwave3"></span></button></a>
@@ -648,7 +651,21 @@
         autoScrolling:true,
         verticalCentered: false,
         scrollOverflow: true,
-        scrollHorizontally: true
+        scrollHorizontally: true,
+        onLeave: function(origin, destination, direction) {
+          var metaThemeColor = document.querySelector("meta[name=theme-color]");
+          if(destination.index == 1){
+            metaThemeColor.setAttribute("content", "rgba(0,0,0,.8)");
+          }
+
+          else if(destination.index == 2){
+            metaThemeColor.setAttribute("content", "#9897A9");
+          }
+
+          else if(destination.index == 3){
+            metaThemeColor.setAttribute("content", "rgba(236, 181, 62, 0.95)");
+          }
+        }
       });
 
       //methods
