@@ -25,6 +25,10 @@ html, body {
     z-index: 99;
   }
 
+  .navbar-brand {
+    padding: 10px;
+  }
+
   .navbar-toggler {
     border: none;
     background: transparent !important;
