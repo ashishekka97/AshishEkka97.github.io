@@ -7,10 +7,6 @@ html, body {
   font-family: 'Quicksand', sans-serif;
 }*/
 
-.navbar {
-  font-family: 'Abel', sans-serif;
-}
-
 @media (max-width: 768px) {
 
   .navbar {
@@ -742,8 +738,8 @@ button {
 }
 
 .work {
-  height: 100%;
-  background: #2F1E30;
+  height: 100vh;
+  background: #9897A9;
 }
 
 .work-title {
@@ -753,15 +749,9 @@ button {
   border-left: solid #D3D2D1;
   border-right: solid #D3D2D1;
   border-bottom: solid #D3D2D1;
-  font-size: 2em;
-  text
+  font-size: 2.5em;
   text-transform: uppercase;
   text-align: center;
-}
-
-.work-container {
-  margin-left: 10px;
-  margin-right: 10px;
 }
 
 .spacer {
@@ -772,10 +762,6 @@ button {
 .work-card {
   padding-top-left: 20px;
   padding-right: 20px;
-}
-
-.card {
-  height: 40vh;
 }
 
 .card-flip {
@@ -797,26 +783,10 @@ button {
 .card {
   border-radius: 0;
   border: none;
-  background: rgba(255, 255, 255, 0.8);
 }
 
 .card-img-top {
   border-radius: 0;
-  height: 100%;
-}
-
-.over-text {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  text-align: center;
-  text-transform: 50%;
-  color: white;
-  font-size: 2em;
-  background: rgba(0, 0, 0, 0.5);
-  text-transform: uppercase;
-  font-family: 'Abel', sans-serif;
-  padding-top: 35%
 }
 
 .card-title {
@@ -824,16 +794,9 @@ button {
 }
 
 .card-block {
-  height: 100%;
-  width: 95%;
-  margin: auto;
-  -webkit-transform: translateZ(-60px) scale(.94);
-}
-
-.spec {
-  margin: 0;
-  height: 100%;
-  margin-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 20px;
 }
 
 .card-text {
@@ -1031,5 +994,4 @@ small {
   bottom: 0;
   left: 0;
   text-align: center;
-  font-family: 'Abel', sans-serif;
 }
