@@ -12,6 +12,11 @@ html, body {
   font-size: 1.3em;
 }
 
+.brand {
+  font-family: 'Lobster Two', cursive;
+  font-size: 2em;
+}
+
 @media (max-width: 768px) {
 
   .navbar {
@@ -26,7 +31,7 @@ html, body {
   }
 
   .navbar-brand {
-    padding: 10px;
+    padding-left: 10px;
   }
 
   .navbar-toggler {

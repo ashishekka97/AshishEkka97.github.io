@@ -10,11 +10,11 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./styles/styles.css">
 
-    <link rel="stylesheet" type="text/css" href="./jquery.funnyText.css" />
+    <link rel="stylesheet" type="text/css" href="./scripts/jquery.funnyText.css" />
 
-    <link href="https://fonts.googleapis.com/css?family=Abel|Quicksand|Lobster|Source+Code+Pro|Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Abel|Quicksand|Lobster+Two" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 
@@ -28,7 +28,8 @@
   <body>
     <nav class="navbar navbar-expand-md fixed-top navbar-dark transition" id="navbar">
       <a class="navbar-brand" href="#intro">
-        <img src="./img/brand.png" width="42" height="42" class="d-inline-block align-top" alt="">
+        <span class="brand">Ae</span>
+        <!-- <img src="./images/brand.png" width="42" height="42" class="d-inline-block align-top" alt=""> -->
       </a>
 
       <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" onclick="loadbg()">
@@ -213,7 +214,7 @@
                 <div class="front">
                   <!-- front content -->
                   <div class="card">
-                    <img class="card-img-top" src="./img/wooscape.png"" alt="100%x180" style="height: 100%; width: 100%; display: block;" data-holder-rendered="true">
+                    <img class="card-img-top" src="./images/wooscape.png"" alt="100%x180" style="height: 100%; width: 100%; display: block;" data-holder-rendered="true">
                     <div class="over-text">
                       WooScape
                     </div>
@@ -249,7 +250,7 @@
                 <div class="front">
                   <!-- front content -->
                   <div class="card">
-                    <img class="card-img-top" src="./img/trendin8r.jpg" alt="100%x180" style="height: 100%; width: 100%; display: block;" data-holder-rendered="true">
+                    <img class="card-img-top" src="./images/trendin8r.jpg" alt="100%x180" style="height: 100%; width: 100%; display: block;" data-holder-rendered="true">
                     <div class="over-text">
                       Trendin8r
                     </div>
@@ -287,7 +288,7 @@
                 <div class="front">
                   <!-- front content -->
                   <div class="card">
-                    <img class="card-img-top" src="./img/aceso.png"" alt="100%x180" style="height: 100%; width: 100%; display: block;" data-holder-rendered="true">
+                    <img class="card-img-top" src="./images/aceso.png"" alt="100%x180" style="height: 100%; width: 100%; display: block;" data-holder-rendered="true">
                     <div class="over-text">
                       Aceso
                     </div>
@@ -325,7 +326,7 @@
                 <div class="front">
                   <!-- front content -->
                   <div class="card">
-                    <img class="card-img-top" src="./img/rofa.png" alt="100%x180" style="height: 100%; width: 100%; display: block;" data-holder-rendered="true">
+                    <img class="card-img-top" src="./images/rofa.png" alt="100%x180" style="height: 100%; width: 100%; display: block;" data-holder-rendered="true">
                     <div class="over-text">
                       ROFA
                     </div>
@@ -363,7 +364,45 @@
                 <div class="front">
                   <!-- front content -->
                   <div class="card">
-                    <img class="card-img-top" src="./img/snake.png"" alt="100%x180" style="height: 100%; width: 100%; display: block;" data-holder-rendered="true">
+                    <img class="card-img-top" src="./images/talpuri.png" alt="100%x180" style="height: 100%; width: 100%; display: block;" data-holder-rendered="true">
+                    <div class="over-text">
+                      Talpuri
+                    </div>
+                  </div>
+                </div>
+                <div class="back">
+                  <!-- back content -->
+                  <div class="card">
+                    <div class="card-block">
+                      <h4 class="card-title">Talpuri</h4>
+                      <h6 class="card-subtitle text-muted">A full-fledged residential colony management site.</h6>
+                    </div>
+                    <div class="card-block spec">
+                      <ul>
+                        <li>PHP</li>
+                        <li>Bootstrap</li>
+                        <li>jQuery</li>
+                        <li>AJAX</li>
+                        <li>MySQL</li>
+                      </ul>
+                      <center>
+                        <a href="http://talpuri.com" class="btn btn-work">View Project</a>
+                      </center>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End Card Flip -->
+          </div>
+          <div class="col-lg-3 col-md-4 spacer">
+            <!-- Card Flip -->
+            <div class="card-flip">
+              <div class="flip">
+                <div class="front">
+                  <!-- front content -->
+                  <div class="card">
+                    <img class="card-img-top" src="./images/snake.png"" alt="100%x180" style="height: 100%; width: 100%; display: block;" data-holder-rendered="true">
                     <div class="over-text">
                       Snake
                     </div>
@@ -435,7 +474,7 @@
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <!-- <script src="./background.js"></script> -->
+    <!-- <script src=".scripts/background.js"></script> -->
     <script>
       $(".twitter").hover(function () {$("#about-section").toggleClass("color-twitter")});
       $(".facebook").hover(function () {$("#about-section").toggleClass("color-facebook")});
