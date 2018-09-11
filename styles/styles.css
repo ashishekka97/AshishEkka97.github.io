@@ -420,6 +420,11 @@ button {
   transition: all 1s ease;
   z-index: 99;
 }
+
+.Coral i {
+  display: inline-block;
+}
+
 .Coral button span {
   position: absolute;
   content: '';
@@ -747,6 +752,15 @@ button {
   background: linear-gradient(rgba(0, 229, 122, 0.5), rgba(0, 191, 102, 0.5)), rgba(0, 229, 122, 0.5);
 }
 .bar .bar-info.mysql {
+  background: linear-gradient(rgba(157, 223, 229, 0.5), rgba(105, 186, 191, 0.5)), rgba(126, 223, 229, 0.5);
+}
+.bar .bar-info.cplus {
+  background: linear-gradient(rgba(126, 223, 229, 0.5), rgba(105, 186, 191, 0.5)), rgba(126, 223, 229, 0.5);
+}
+.bar .bar-info.mongo {
+  background: linear-gradient(rgba(126, 223, 229, 0.5), rgba(105, 186, 191, 0.5)), rgba(126, 223, 229, 0.5);
+}
+.bar .bar-info.express {
   background: linear-gradient(rgba(126, 223, 229, 0.5), rgba(105, 186, 191, 0.5)), rgba(126, 223, 229, 0.5);
 }
 
