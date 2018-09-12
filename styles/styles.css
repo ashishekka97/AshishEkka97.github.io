@@ -776,8 +776,7 @@ button {
   border-left: solid #D3D2D1;
   border-right: solid #D3D2D1;
   border-bottom: solid #D3D2D1;
-  font-size: 2em;
-  text
+  font-size: 2.5em;
   text-transform: uppercase;
   text-align: center;
 }
@@ -905,7 +904,6 @@ button {
 }
 
 .contact {
-  font-family: 'Lato', georgia;
   font-size: 25px;
   color: rgba(255, 255, 255, 1);
   background-color: rgba(236, 181, 62, 0.95);
