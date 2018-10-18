@@ -17,6 +17,9 @@ html, body {
   height: 100%;
   z-index: 9999;
   background: url(../images/loader.gif) center no-repeat #fff;
+  padding-top: 30%;
+  font-size: 30px;
+  text-align: center;
 }
 
 .navbar {
