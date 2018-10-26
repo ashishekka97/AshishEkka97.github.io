@@ -926,6 +926,7 @@ button {
   font-weight: 300;
   -webkit-font-smoothing: antialiased;
   height: 100vh;
+  font-family:'Kalam', cursive;
 }
 
 #contact-form {
@@ -946,7 +947,6 @@ input {
   text-align: center;
   background: none;
   font-weight: 700;
-  font-family: 'Quicksand', sans-serif;
   font-size: 25px;
   color: rgba(255, 255, 255, 1);
   max-width: 90%;
