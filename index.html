@@ -67,13 +67,13 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto" id="navig">
           <li data-menuanchor="intro" class="nav-item">
-            <a class="nav-link" href="#intro">Hello!<span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="#intro"><span id = "welcome-nav">Hello</span>!<span class="sr-only">(current)</span></a>
           </li>
           <li data-menuanchor="about" class="nav-item">
             <a class="nav-link" href="#about">About</a>
           </li>
           <li data-menuanchor="work" class="nav-item">
-            <a class="nav-link" href="#work">Work</a>
+            <a class="nav-link" href="#work">Projects</a>
           </li>
           <li data-menuanchor="contact" class="nav-item">
             <a class="nav-link" href="#contact">Contact</a>
@@ -88,7 +88,7 @@
       
       <div class="intro-background section" id="welcome-section">
       <div class="align-middle intro">
-        <h1>Hello, I'm <span id="myname"> Ashish Ekka </span></h1>
+        <h1><span id = "welcome-lang">Hello</span>, I'm <span id="myname"> Ashish Ekka. </span></h1>
         <span href="" class="typewrite" data-period="2000" data-type='[ "A Curious Student.", "A Full Stack Developer.", "A Tech Enthusiast.", "An EDM Lover.", "A Foodie.", "A Gamer.", "A Night Owl.", "An Avid Reader."]'>
           <span class="wrap"></span>
         </span>
@@ -116,7 +116,7 @@
               <li></li>
             </ul>
     </div >
-    <div class="about-background section" id="about-section">
+    <div class="about-background section">
       <div class="row d-block d-md-none" style="margin: 0; margin-bottom: 20px;">
         <div class="col-md-4">
         </div>
@@ -139,21 +139,19 @@
           </p>
           <p>
             At times when he is not into building stuffs,
-            he listens to good music, reads some quality articles
-            and books or wanders around the city with
+            he listens to good music (EDMs Ahem!),
+            watches some crispy tech videos (MKBHD fan spotted!),
+            reads articles/books or just wanders around the city with his
             friends in search of good food.
           </p>
           <p>
             Check his resumé for more.
           </p>
-          <div class="btn Coral">
-            <a  href="https://resume.creddle.io/resume/eb8t815tu2p"><button><i class="far fa-file-pdf"></i> Resumé<span class="Coralwave1"></span><span class="Coralwave2"></span><span class="Coralwave3"></span></button></a>
-          </div>
         </div>
 
         <div class="col-md-4 center">
           <h2 class="d-none d-md-block">About</h2>
-          <h3 class="d-block d-md-none">Connect</h3>
+          <!-- <h3 class="d-block d-md-none">Connect</h3>
           <div class="social-container-wrap">
               <br><br><br>
               <div class="social-container">
@@ -168,7 +166,21 @@
                   <a href="mailto://ashishekka329@gmail.com" class="envelope"><i class="fas fa-envelope"></i></a>
                   
               </div>
+          </div> -->
+          <div class="row">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-8">
+                <div  class="ratio img-responsive img-circle" style="background-image: url(./images/ashish.jpg);"></div>
+            </div>
+            <div class="col-sm-2"></div>
           </div>
+          <center>
+              <div class="btn Coral">
+                <!-- <a  href="https://resume.creddle.io/resume/eb8t815tu2p"><button><i class="far fa-file-pdf"></i> Resumé<span class="Coralwave1"></span><span class="Coralwave2"></span><span class="Coralwave3"></span></button></a> -->
+                <a  href="./Ashish_Resume_Final.pdf"><button><i class="far fa-file-pdf"></i> Resumé<span class="Coralwave1"></span><span class="Coralwave2"></span><span class="Coralwave3"></span></button></a>
+              </div>
+          </center>
+          
         </div>
         
         <div class="col-md-4 right">
@@ -247,7 +259,7 @@
         </div>
         <div class="col-md-4">
           <div class="work-title">
-            Work
+            Projects
           </div>
         </div>
         <div class="col-md-4">
@@ -487,34 +499,57 @@
 
     </div>
 
-    <div class="contact section">
-      <form id="contact-form" action="https://formspree.io/ashishekka329@gmail.com" method="POST">
-        <p>Dear Ashish,</p>
-        <p>My
-          <label for="your-name">name</label> is
-          <input type="text" name="your-name" id="your-name" minlength="3" placeholder="(your name here)" required> and</p>
+    <div class="contact section" id="contact-section">
+      <div class="row">
+        <div class="col-md-8">
+          <form id="contact-form" action="https://formspree.io/ashishekka329@gmail.com" method="POST">
+            <p>Dear Ashish,</p>
+            <p>My
+              <label for="your-name">name</label> is
+              <input type="text" name="your-name" id="your-name" minlength="3" placeholder="(your name here)" required> and</p>
 
-        <p>my
-          <label for="email">email address</label> is
-          <input type="email" name="your-email" id="email" placeholder="(your email address)" required>
-        </p>
+            <p>my
+              <label for="email">email address</label> is
+              <input type="email" name="your-email" id="email" placeholder="(your email address)" required>
+            </p>
 
-        <p> I have a
-          <label for="your-message">message</label> for you,</p>
+            <p> I have a
+              <label for="your-message">message</label> for you,</p>
 
-        <p>
-          <textarea name="your-message" id="your-message" placeholder="(your msg here)" class="expanding" required></textarea>
-        </p>
-        <p>
-          <button type="submit">
-            <svg version="1.1" class="send-icn" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100px" height="36px" viewBox="0 0 100 36" enable-background="new 0 0 100 36" xml:space="preserve">
-              <path d="M100,0L100,0 M23.8,7.1L100,0L40.9,36l-4.7-7.5L22,34.8l-4-11L0,30.5L16.4,8.7l5.4,15L23,7L23.8,7.1z M16.8,20.4l-1.5-4.3
-        l-5.1,6.7L16.8,20.4z M34.4,25.4l-8.1-13.1L25,29.6L34.4,25.4z M35.2,13.2l8.1,13.1L70,9.9L35.2,13.2z" />
-            </svg>
-            <small>send</small>
-          </button>
-        </p>
-      </form>
+            <p>
+              <textarea name="your-message" id="your-message" placeholder="(your msg here)" class="expanding" required></textarea>
+            </p>
+            <p>
+              <button type="submit">
+                <svg version="1.1" class="send-icn" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100px" height="36px" viewBox="0 0 100 36" enable-background="new 0 0 100 36" xml:space="preserve">
+                  <path d="M100,0L100,0 M23.8,7.1L100,0L40.9,36l-4.7-7.5L22,34.8l-4-11L0,30.5L16.4,8.7l5.4,15L23,7L23.8,7.1z M16.8,20.4l-1.5-4.3
+            l-5.1,6.7L16.8,20.4z M34.4,25.4l-8.1-13.1L25,29.6L34.4,25.4z M35.2,13.2l8.1,13.1L70,9.9L35.2,13.2z" />
+                </svg>
+                <small>send</small>
+              </button>
+            </p>
+          </form>
+        </div>
+        <div class="col-md-4">
+          <h3 class="d-block contact-head">Let's Connect</h3>
+          <div class="social-container-wrap">
+              <br><br><br>
+              <div class="social-container">
+                  <a href="https://twitter.com/ash_ekka" class="twitter"><i class="fab fa-twitter"></i></a>
+                  <a href="https://www.facebook.com/ashekka" class="facebook"><i class="fab fa-facebook"></i></a>
+                  <a href="https://plus.google.com/u/0/113621284916491998001" class="googleplus"><i class="fab fa-google-plus"></i></a>
+                  <a href="https://www.quora.com/profile/Ashish-Ekka-10" class="quora"><i class="fab fa-quora"></i></a>
+                  <a href="https://github.com/ashishekka97" class="github"><i class="fab fa-github"></i></a>
+                  <a href="https://medium.com/@ashishekka329" class="medium"><i class="fab fa-medium"></i></a>
+                  <a href="https://www.instagram.com/ashishekka97/" class="instagram"><i class="fab fa-instagram"></i></a>
+                  <a href="https://linkedin.com/in/ashishekka97" class="linkedin"><i class="fab fa-linkedin"></i></a>
+                  <a href="mailto://ashishekka329@gmail.com" class="envelope"><i class="fas fa-envelope"></i></a>
+                  
+              </div>
+          </div>
+        </div>
+      </div>
+      
       <div class="love">
         <a href="https://github.com/AshishEkka97/ashishekka97.github.io"><i class="fa fa-code" style="color: #24292E;"></i></a> with <i class="fa fa-heart" style="color: #E73C7E;"></i> & <a href="https://www.youtube.com/playlist?list=PLcJEBNQ1NGCyQG1kXiqumDWlPaiQEU0cG"><i class="fa fa-music" style="color: #23A6D5;"></i></a>
       </div>
@@ -525,17 +560,17 @@
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <!-- <script src=".scripts/background.js"></script> -->
     <script>
-      $(".twitter").hover(function () {$("#about-section").toggleClass("color-twitter")});
-      $(".facebook").hover(function () {$("#about-section").toggleClass("color-facebook")});
-      $(".googleplus").hover(function () {$("#about-section").toggleClass("color-googleplus")});
-      $(".quora").hover(function () {$("#about-section").toggleClass("color-quora")});
-      $(".medium").hover(function () {$("#about-section").toggleClass("color-medium")});
-      $(".instagram").hover(function () { $("#about-section").toggleClass("color-instagram") });
-      $(".github").hover(function () { $("#about-section").toggleClass("color-github") });
-      $(".envelope").hover(function () { $("#about-section").toggleClass("color-envelope") });
-      $(".linkedin").hover(function () { $("#about-section").toggleClass("color-linkedin") });
+      $(".twitter").hover(function () {$("#contact-section").toggleClass("color-twitter")});
+      $(".facebook").hover(function () {$("#contact-section").toggleClass("color-facebook")});
+      $(".googleplus").hover(function () {$("#contact-section").toggleClass("color-googleplus")});
+      $(".quora").hover(function () {$("#contact-section").toggleClass("color-quora")});
+      $(".medium").hover(function () {$("#contact-section").toggleClass("color-medium")});
+      $(".instagram").hover(function () { $("#contact-section").toggleClass("color-instagram") });
+      $(".github").hover(function () { $("#contact-section").toggleClass("color-github") });
+      $(".envelope").hover(function () { $("#contact-section").toggleClass("color-envelope") });
+      $(".linkedin").hover(function () { $("#contact-section").toggleClass("color-linkedin") });
     </script>
-
+    
     <script>
       var TxtType = function(el, toRotate, period) {
         this.toRotate = toRotate;
@@ -687,6 +722,20 @@
     </script>
 
     <script type="text/javascript">
+    	var wel = randomtext();
+      document.getElementById("welcome-lang").innerHTML = wel;
+      document.getElementById("welcome-nav").innerHTML = wel;
+    	function randomtext() {
+			    var randomtxt = [
+		        'Hello',
+		        'Bonjour',
+		        'Hola',
+            'Aloha',
+            'Ciao',
+		        'Namaste'];
+			    return randomtxt[Math.floor((Math.random() * 5.99))];
+			}
+
       // Auto resize input
       function resizeInput() {
           $(this).attr('size', $(this).val().length);
