@@ -22,6 +22,18 @@ html, body {
   text-align: center;
 }
 
+.scene {
+  perspective: 500px;
+  width: 100vw;
+  height: 100vh;
+}
+
+.viewBox {
+  position: relative;
+  transform-style: preserve-3d;
+  transform: translateZ(-50px);
+}
+
 .navbar {
   font-family: 'Abel', sans-serif;
   font-size: 1.3em;
@@ -139,6 +151,7 @@ html, body {
   -webkit-animation: Gradient 15s ease infinite;
   -moz-animation: Gradient 15s ease infinite;
   animation: Gradient 15s ease infinite;
+  transform: rotateX(  0deg) translateZ( 50%);
 }
 
 @-webkit-keyframes Gradient {
@@ -372,6 +385,7 @@ svg {
   background: rgba(0,0,0,.8);
   color: #ddd;
   height: 100vh;
+  transform: rotateX( 90deg) translateZ(vh / 2);
   /*background-image: url(./img/app.jpg);
   background-size: contain;
   background-position: center;
@@ -814,6 +828,7 @@ button {
 .work {
   height: 100%;
   background: #2F1E30;
+  transform: rotateX(180deg) translateZ( vh / 2);
 }
 
 .work-title {
@@ -962,6 +977,7 @@ button {
   -webkit-font-smoothing: antialiased;
   height: 100vh;
   font-family:'Kalam', cursive;
+  transform: rotateX(-270deg) translateZ(vh / 2);
 }
 
 .contact-head {
