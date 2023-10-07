@@ -845,35 +845,39 @@
     function animateSkills() {
       var skills = document.querySelector('#skills');
       function skillSet() {
-        // Iterate over each element w/ a class of
-        // bar-info, storing the value of data-total
-        // in a variable.  Using jQuery's CSS method,
-        // dynamically update the width of each bar.
-        $('.bar-info').each(function () {
-          total = $(this).data("total");
-          $(this).css("width", total + "%");
-        });
-
-        // Iterate over each element w/ the class percent.  Using
-        // jQuery's $(this) will allow us to interact w/ each specific
-        // object in the loop.  Then use jQuery's super awesome animate method
-        // to implement a counter on each .percent element, which will "count"
-        // up incrementally until it reaches the number inside the percent span,
-        // aka it's "ceiling".
-        $('.percent').each(function () {
-          var $this = $(this);
-          $({
-            Counter: 10
-          }).animate({
-            Counter: $this.text()
-          }, {
-            duration: 3000,
-            easing: 'swing',
-            step: function () {
-              $this.text(Math.ceil(this.Counter) + "%");
-            }
+        try {
+          // Iterate over each element w/ a class of
+          // bar-info, storing the value of data-total
+          // in a variable.  Using jQuery's CSS method,
+          // dynamically update the width of each bar.
+          $('.bar-info').each(function () {
+            total = $(this).data("total");
+            $(this).css("width", total + "%");
           });
-        });
+
+          // Iterate over each element w/ the class percent.  Using
+          // jQuery's $(this) will allow us to interact w/ each specific
+          // object in the loop.  Then use jQuery's super awesome animate method
+          // to implement a counter on each .percent element, which will "count"
+          // up incrementally until it reaches the number inside the percent span,
+          // aka it's "ceiling".
+          $('.percent').each(function () {
+            var $this = $(this);
+            $({
+              Counter: 10
+            }).animate({
+              Counter: $this.text()
+            }, {
+              duration: 3000,
+              easing: 'swing',
+              step: function () {
+                $this.text(Math.ceil(this.Counter) + "%");
+              }
+            });
+          });
+        } catch(ex) {
+          
+        }
       };
       // Invoke our skillSet function inside a setTimeout, 
       // to create a short delay before the animation begins.
@@ -906,27 +910,37 @@
       verticalCentered: false,
       scrollOverflow: true,
       scrollHorizontally: true,
-      onLeave: function (origin, destination, direction) {
+      onLeave: function (origin, destination, direction, tirgger) {
         var metaThemeColor = document.querySelector("meta[name=theme-color]");
-        if (destination.index == 1) {
-          metaThemeColor.setAttribute("content", "#333333");
-          animateSkills();
-        }
+        switch(destination.index) {
+          case 0: {
+            metaThemeColor.setAttribute("content", "#23A6D5");
+            resetSkills();
+            break;
+          }
 
-        if (origin.index == 1) {
-          resetSkills();
-        }
+          case 1: {
+            metaThemeColor.setAttribute("content", "#333333");
+            animateSkills();
+            break;
+          }
 
-        else if (destination.index == 2) {
-          metaThemeColor.setAttribute("content", "#2F1E30");
-        }
+          case 2: {
+            metaThemeColor.setAttribute("content", "#2F1E30");
+            resetSkills();
+            break;
+          }
 
-        else if (destination.index == 3) {
-          metaThemeColor.setAttribute("content", "#EDB948");
-        }
+          case 3: {
+            metaThemeColor.setAttribute("content", "#EDB948");
+            resetSkills();
+            break;
+          }
 
-        else {
-          metaThemeColor.setAttribute("content", "#23A6D5");
+          default: {
+            metaThemeColor.setAttribute("content", "#23A6D5");
+            resetSkills();
+          }
         }
       }
     });
